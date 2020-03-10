@@ -340,7 +340,7 @@
 
     <script>
       let game = null;
-      const MAX_FAULTS = 7;
+      const MAX_FAULTS = 9;
       const wordList = [
         'tree',
         'house',
@@ -413,15 +413,15 @@
       function drawResult(faults) {
         const texts = [
           /* 0 */ "Let's find that word!",
-          /* 1 */ "Let's hang out.",
-          /* 2 */ "Don't worry, everything is fine.",
-          /* 3 */ "Don't worry, everything is fine.",
-          /* 4 */ "Don't worry, everything is fine.",
-          /* 5 */ 'Ooh... be careful!',
-          /* 6 */ "You can do better!",
-          /* 7 */ 'OMG!!!',
-          /* 8 */ 'HEEEELP!',
-          /* 9 */ 'R.I.P.',
+          /* 1 */ "Nope, it's not right.",
+          /* 2 */ "Try again.",
+          /* 3 */ "Don't worry, you have 6 more tries.",
+          /* 4 */ "Don't worry, you have 5 more tries.",
+          /* 5 */ 'Don't worry, you have 4 more tries.',
+          /* 6 */ "Think carefully, you have 3 more tries!",
+          /* 7 */ 'OK, think VERY carefully.',
+          /* 8 */ 'Make a good guess now!',
+          /* 9 */ 'Better luck next time! ;-) ',
         ];
 
         const container = document.querySelector('#drawing .drawing__message');
